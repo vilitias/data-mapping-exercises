@@ -23,6 +23,9 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "rules": {
+      "prettier/prettier": "warn"
+    },
     "extends": [
       "react-app",
       "react-app/jest",

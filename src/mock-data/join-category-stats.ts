@@ -6,7 +6,9 @@ export enum USER_BASE {
     US = 'US',
 }
 
-export const USER_BASE_LABELS = {
+export const USER_BASE_LABELS: {
+    [key in USER_BASE]: string;
+} = {
     [USER_BASE.EUROPE]: 'Europe',
     [USER_BASE.ASIA]: 'Asia',
     [USER_BASE.US]: 'United States',
@@ -21,7 +23,7 @@ export type CategoryDto = {
     id: string;
     label: string;
     typeId: string;
-    userBase: USER_BASE;
+    userBase: USER_BASE; //1
     createdAt: string;
     updatedAt: string;
     deletedAt?: string | null;
